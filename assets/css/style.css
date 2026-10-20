@@ -153,7 +153,8 @@ fieldset{border:0;padding:0;margin:0}
 .exp{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:22px}
 .exp article{grid-column:span 2;background:#3D484B;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
 .exp article:nth-child(4),.exp article:nth-child(5){grid-column:span 3}
-.exp .ph{border-radius:0;aspect-ratio:3/2}
+.exp .ph{border-radius:0;aspect-ratio:4/3;background:#F7F6F2}
+.exp .ph img{object-fit:contain}
 .exp .body{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
 .exp h3{color:var(--on-slate)}
 .exp p{color:#D7CFC2;font-size:.9375rem}
@@ -215,7 +216,7 @@ fieldset{border:0;padding:0;margin:0}
 
 /* contact */
 .contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:24px;align-items:stretch}
-.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:20px}
+.contact-card{display:flex;flex-direction:column;gap:20px}
 .contact-card .btn{align-self:stretch}
 .ways{display:grid;gap:0;margin:0;padding:0;list-style:none}
 .ways li{display:flex;gap:14px;align-items:center;padding-block:14px;border-top:1px solid var(--line)}

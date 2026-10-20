@@ -42,11 +42,11 @@
 
   // --- experiences: [time, title, price, includes, image, text]
   var exp=[
-    ["Sunrise","Sunrise walk to Shanti Stupa","500","refreshments included","morning_walk_to_shanti_stupa.jpeg","Set off in the cool before dawn and climb to Shanti Stupa as the first light reaches the peaks around Leh. We walk at an easy pace, then share something warm to drink while the town wakes up below."],
-    ["Sunset","Sunset walk to Tsemo","500","refreshments included","sunset_walk_to_tsemo.jpeg","Wind up through the old town lanes to Tsemo as the evening turns gold. From the top you see the whole valley, Leh Palace and the Stok range, and we stop for refreshments on the way back down."],
-    ["Half day","Picnic by the stream in Gangles","1,500","everything included","picnic_at_gangles.jpeg","Spend a slow afternoon in the village of Gangles, beside a mountain stream just outside Leh. We pack the food, the tea and the blankets; you bring your appetite and a book."],
-    ["Evening","Cook a Ladakhi meal with the family","800","dinner included","cookwithhost.jpeg","Join us in our kitchen to make a home-style Ladakhi meal, from kneading the dough to the last stir of the pot. Then sit down together and eat what you made."],
-    ["Morning","Leh old town walk","800","guided walk","old_town_walk.jpeg","Explore the narrow lanes, old houses and hidden corners of Leh's old town with someone who grew up around them. We share the stories behind the places most visitors walk straight past."]
+    ["Sunrise","Sunrise walk to Shanti Stupa","500","refreshments included","morning_walk_to_shanti_stupa.png","Set off in the cool before dawn and climb to Shanti Stupa as the first light reaches the peaks around Leh. We walk at an easy pace, then share something warm to drink while the town wakes up below."],
+    ["Sunset","Sunset walk to Tsemo","500","refreshments included","sunset_walk_to_tsemo.png","Wind up through the old town lanes to Tsemo as the evening turns gold. From the top you see the whole valley, Leh Palace and the Stok range, and we stop for refreshments on the way back down."],
+    ["Half day","Picnic by the stream in Gangles","1,500","everything included","picnic_at_gangles.png","Spend a slow afternoon in the village of Gangles, beside a mountain stream just outside Leh. We pack the food, the tea and the blankets; you bring your appetite and a book."],
+    ["Evening","Cook a Ladakhi meal with the family","800","dinner included","cookwithhost.png","Join us in our kitchen to make a home-style Ladakhi meal, from kneading the dough to the last stir of the pot. Then sit down together and eat what you made."],
+    ["Morning","Leh old town walk","800","guided walk","old%20town%20walk.png","Explore the narrow lanes, old houses and hidden corners of Leh's old town with someone who grew up around them. We share the stories behind the places most visitors walk straight past."]
   ];
   var ex=document.getElementById("expList"),checks=document.getElementById("f-exp");
   exp.forEach(function(e,i){
