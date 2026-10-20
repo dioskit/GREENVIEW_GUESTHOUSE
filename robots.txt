@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dioskit.github.io/GREENVIEW_GUESTHOUSE/sitemap.xml
