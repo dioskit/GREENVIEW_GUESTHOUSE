@@ -1,3 +1,2 @@
-Room photos. Prefix with the room type if helpful, e.g. deluxe-1.jpg, premium-1.jpg.
-
-Name files 1.jpg, 2.jpg, 3.png ... in the order you want them shown.
+Room photos. Main photos are "1 premium main pic.jpg" and "2 delux main pic.jpg".
+Other photos are named "N delux.jpg" or "N premium.jpg".
