@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hotel Green View, Leh</title>
+<meta name="description" content="Hotel Green View, a family-run guest house in Upper Karzoo, Leh, Ladakh. Deluxe and Premium rooms, mountain views, home-cooked Ladakhi food and host-led experiences. Ask us directly on WhatsApp.">
+<link rel="icon" href="assets/images/logo_images/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..600&family=Manrope:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#home" aria-label="Hotel Green View, home">
+      <img src="assets/images/logo_images/logo-mark.png" alt="" width="48" height="42">
+      <span><b>Green View</b><small>Hotel · Leh</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Sections">
+      <a href="#rooms" data-i18n="nav_rooms">Rooms</a>
+      <a href="#experiences" data-i18n="nav_exp">Experiences</a>
+      <a href="#explore" data-i18n="nav_explore">Explore Ladakh</a>
+      <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+      <a href="#contact" data-i18n="nav_contact">Contact</a>
+    </nav>
+    <a class="btn book" href="#rates" data-i18n="ask_rate">Ask today's rate</a>
+    <button class="menu-btn" type="button" id="menuBtn" aria-controls="nav" aria-expanded="false" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<!-- Home -->
+<section class="hero" id="home" aria-label="Welcome">
+  <div class="slides" id="slides" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="julley">Julley!</p>
+    <h1 data-i18n="hero_h">Your <em>green corner</em> in Leh</h1>
+    <p data-i18n="hero_p">A comfortable, family-run guest house with mountain views, home-cooked food and a host who helps you plan every day in Ladakh.</p>
+    <div class="actions">
+      <a class="btn book" href="#rates" data-i18n="ask_rate">Ask today's rate</a>
+      <a class="btn line" href="#rooms" data-i18n="cta_rooms">See the rooms</a>
+    </div>
+    <div class="dots" id="dots"></div>
+  </div>
+</section>
+
+<!-- Rooms -->
+<section class="band" id="rooms">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="rooms_eb">Stay with us</p>
+      <h2 data-i18n="rooms_h">Rooms</h2>
+      <p class="lede" data-i18n="rooms_p">Every room sleeps up to three guests and has hot water around the clock. Rates change with the season, so ask us for today's price.</p>
+    </div>
+    <div class="rooms">
+      <article class="room rise">
+        <figure class="ph"><img src="assets/images/rooms_images/2.jpg" alt="Deluxe room with a double bed and large windows" loading="lazy"></figure>
+        <div class="thumbs"><img src="assets/images/rooms_images/1.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/3.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/13.jpg" alt="" loading="lazy"></div>
+        <div class="body">
+          <h3>Deluxe Room</h3>
+          <p>A bright, simple room for couples, friends or a small family, with a comfortable bed, wooden floors and space to unpack after a long road.</p>
+          <ul><li>Up to 3 guests</li><li>Attached bathroom</li><li>24-hour hot water</li><li>Wi-Fi</li></ul>
+        </div>
+      </article>
+      <article class="room rise">
+        <figure class="ph"><img src="assets/images/rooms_images/6.jpg" alt="Premium room with a sitting area and a view of the mountains" loading="lazy"></figure>
+        <div class="thumbs"><img src="assets/images/rooms_images/7.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/8.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/12.jpg" alt="" loading="lazy"></div>
+        <div class="body">
+          <h3>Premium Room</h3>
+          <p>Our larger room, for guests who want a little more space and the best of the view. A good choice for longer stays and remote work.</p>
+          <ul><li>Up to 3 guests</li><li>Attached bathroom</li><li>Mountain view</li><li>Sitting area</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Ask today's rates -->
+<section class="band mist" id="rates">
+  <div class="wrap">
+    <div class="rates rise">
+      <div>
+        <p class="eyebrow" data-i18n="rates_eb">Ask today's rates</p>
+        <h2 data-i18n="rates_h">Tell us your dates, we'll send the best price</h2>
+        <p class="lede">Our rates change with the season and how full we are, so the owner quotes every stay personally.</p>
+        <ol>
+          <li>Fill in your dates and how many of you are coming.</li>
+          <li>We turn it into a WhatsApp message you can check before sending.</li>
+          <li>The owner replies with availability, today's rate and how to pay, usually within a few hours.</li>
+        </ol>
+      </div>
+      <form class="rate-form" id="enquiry" novalidate>
+        <div><label for="f-in">Arrival</label><input id="f-in" type="date" required></div>
+        <div><label for="f-out">Departure</label><input id="f-out" type="date" required></div>
+        <div><label for="f-guests">Guests</label><select id="f-guests"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></div>
+        <div><label for="f-room">Room</label><select id="f-room"><option>Deluxe</option><option>Premium</option><option selected>Not sure yet</option></select></div>
+        <div class="full"><label for="f-name">Your name</label><input id="f-name" autocomplete="name" required></div>
+        <fieldset class="full"><legend class="legend">Interested in any experiences? (optional)</legend><div class="checks" id="f-exp"></div></fieldset>
+        <div class="full form-actions">
+          <button class="btn book" type="submit">Get today's rate</button>
+          <a class="btn line" id="sendWa" href="#" target="_blank" rel="noopener">Open WhatsApp to send</a>
+        </div>
+        <p class="form-note full" id="formNote">Nothing is stored on this site. Your details only go into the WhatsApp message.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Facilities -->
+<section class="band" id="facilities">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="fac_eb">Facilities</p>
+      <h2 data-i18n="fac_h">Everything you need after a day at altitude</h2>
+    </div>
+    <div class="fac-photos rise">
+      <figure class="ph"><img src="assets/images/facilities_images/7.jpg" alt="Courtyard and parking with a view of the hills" loading="lazy"></figure>
+      <figure class="ph"><img src="assets/images/facilities_images/1.jpg" alt="Attached bathroom" loading="lazy"></figure>
+      <figure class="ph"><img src="assets/images/facilities_images/5.jpg" alt="Green View toiletries" loading="lazy"></figure>
+    </div>
+    <ul class="fac rise" id="facList"></ul>
+  </div>
+</section>
+
+<!-- From our kitchen -->
+<section class="band mist" id="food">
+  <div class="wrap split">
+    <div class="kitchen-text rise">
+      <p class="eyebrow" data-i18n="food_eb">From our kitchen</p>
+      <h2 data-i18n="food_h">Home-cooked food, the way we eat it</h2>
+      <p class="lede">Everything we serve is cooked fresh in our own kitchen by our family, with vegetables from local farms whenever the season allows.</p>
+      <p>Mornings start with a hot breakfast and a pot of tea in the dining room, with the mountains outside the window. In the evening, come back to warming Ladakhi dishes like thenthuk and mok-thuk, steaming momos and skyu, or simple Indian home food of dal, rice, sabzi and fresh roti.</p>
+      <p>Try a cup of salty butter tea the way Ladakhi families drink it, or stay with sweet masala chai. Tell us about any diet or allergy and we will cook for it, and on your first day at altitude we keep the food light and gentle.</p>
+      <p class="sign">Cooked with care, served like family.</p>
+    </div>
+    <div class="food-grid rise">
+      <figure class="ph a"><img src="assets/images/food_images/1.jpeg" alt="A bowl of thenthuk noodle soup" loading="lazy"><figcaption>Thenthuk</figcaption></figure>
+      <figure class="ph b"><img src="assets/images/food_images/2.jpeg" alt="Butter tea being poured" loading="lazy"><figcaption>Butter tea</figcaption></figure>
+      <figure class="ph c"><img src="assets/images/food_images/4.jpeg" alt="A plate of mok-thuk" loading="lazy"><figcaption>Mok-thuk</figcaption></figure>
+      <figure class="ph d"><img src="assets/images/food_images/3.jpg" alt="Our dining hall" loading="lazy"><figcaption>Our dining hall</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- Experiences -->
+<section class="band slate" id="experiences">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="exp_eb">Experiences with us</p>
+      <h2 data-i18n="exp_h">See Leh the way we know it</h2>
+      <p class="lede" data-i18n="exp_p">Alongside your stay, our family offers a few small outings around Leh. There is nothing to book in advance. Just let us know whenever you feel like joining one.</p>
+    </div>
+    <div class="exp" id="expList"></div>
+    <div class="how rise">
+      <div><b>When you book</b><p>Mention the ones you like in your booking message and we'll plan them into your days.</p></div>
+      <div><b>On WhatsApp</b><p>Message us any time before or during your trip and we'll fit it in.</p></div>
+      <div><b>During your stay</b><p>Just ask us at the house. Most outings can be arranged for the next morning or evening.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Our story -->
+<section class="band" id="story">
+  <div class="wrap split story">
+    <figure class="ph rise" style="aspect-ratio:4/5"><img src="assets/images/ourStory_images/1.jpg" alt="Hotel Green View in the evening light" loading="lazy"></figure>
+    <div class="rise">
+      <p class="eyebrow" data-i18n="story_eb">Our story</p>
+      <blockquote>“We opened our home to travellers four years ago, and we still greet every guest at the gate.”</blockquote>
+      <p class="lede">Green View is run by its owner, who looks after bookings, arrivals and every question in between. Guests come for the view and the quiet, and leave with a list of places only locals would have told them about.</p>
+      <div class="facts">
+        <div><b>4</b><span>years hosting guests</span></div>
+        <div><b>Apr–Oct</b><span>open every season</span></div>
+        <div><b>~3 hrs</b><span>usual reply time</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Explore Ladakh -->
+<section class="band mist" id="explore">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="explore_eb">Explore Ladakh</p>
+      <h2 data-i18n="explore_h">Start in Leh, then go further</h2>
+      <p class="lede">A few favourites to plan around. Tap a place to see what to expect and a suggested itinerary. We can help with taxis, bikes and permits for all of them.</p>
+    </div>
+    <div class="places" id="placeList"></div>
+  </div>
+  <dialog class="place-dialog" id="placeDialog" aria-labelledby="pdTitle">
+    <button class="pd-close" type="button" id="pdClose" aria-label="Close">×</button>
+    <figure class="ph pd-photo" id="pdPhoto"></figure>
+    <div class="pd-body">
+      <p class="far" id="pdTag"></p>
+      <h3 id="pdTitle"></h3>
+      <p class="pd-intro" id="pdIntro"></p>
+      <dl class="pd-facts" id="pdFacts"></dl>
+      <h4>Suggested itinerary</h4>
+      <ol class="pd-days" id="pdDays"></ol>
+      <p class="pd-tip" id="pdTip"></p>
+      <a class="btn book" id="pdAsk" href="#" target="_blank" rel="noopener">Ask us to plan this trip</a>
+    </div>
+  </dialog>
+</section>
+
+<!-- Guest reviews -->
+<section class="band" id="reviews">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="rev_eb">Guest reviews</p>
+      <h2 data-i18n="rev_h">What guests say</h2>
+      <p class="lede">Sample text for now. These will be replaced with real reviews from Google and Agoda, each linked to the original.</p>
+    </div>
+    <div class="reviews" id="reviewList"></div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section class="band mist" id="gallery">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="gal_eb">Gallery</p>
+      <h2 data-i18n="gal_h">A look around</h2>
+    </div>
+    <div class="gallery rise" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Before you come -->
+<section class="band" id="faq">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="faq_eb">Before you come</p>
+      <h2 data-i18n="faq_h">Questions travellers ask us</h2>
+    </div>
+    <div class="faq">
+      <details open><summary>How should I handle the altitude?</summary><p>Leh sits at about 3,500 metres. Plan to rest for your first day or two, drink plenty of water and avoid hard exercise until you feel well. If you fly in, give yourself a quiet first day before any passes.</p></details>
+      <details><summary>When are you open?</summary><p>We welcome guests from April to October, which is the main travel season in Ladakh.</p></details>
+      <details><summary>Do I need permits?</summary><p>Leh town needs no permit, but places like Nubra Valley and Pangong Tso do. Tell us your plans and we'll help you arrange them.</p></details>
+      <details><summary>Can you pick me up from the airport?</summary><p>Yes. Send us your flight details on WhatsApp and we'll arrange a pickup.</p></details>
+      <details><summary>What are the check-in and check-out times?</summary><p>To be confirmed by the owner.</p></details>
+      <details><summary>What is your cancellation policy?</summary><p>To be confirmed by the owner. House rules will be listed here too.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- Contact and book -->
+<section class="band mist" id="contact">
+  <div class="wrap">
+    <div class="head rise">
+      <p class="eyebrow" data-i18n="con_eb">Contact and book</p>
+      <h2 data-i18n="con_h">Message us directly</h2>
+      <p class="lede">The owner replies personally, usually within a few hours.</p>
+    </div>
+    <div class="contact">
+      <div class="contact-card rise">
+        <a class="btn book" href="https://wa.me/917006121008?text=Julley!%20I%27d%20like%20to%20ask%20about%20a%20stay%20at%20Hotel%20Green%20View." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+          Chat with us on WhatsApp
+        </a>
+        <ul class="ways">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg><div><b>Call</b><a href="tel:+917006121008">+91 70061 21008</a></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><div><b>Email</b><a href="mailto:greenviewhotel08@gmail.com">greenviewhotel08@gmail.com</a></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><b>Address</b><span>Upper Karzoo, Leh, Ladakh</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Season</b><span>Open April to October</span></div></li>
+        </ul>
+        <a class="btn line" href="#rates">Ask today's rate</a>
+      </div>
+      <div class="map rise">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7685.27335294821!2d77.57462239419449!3d34.17046004245051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38fdeb1154e09b9f%3A0x8c424b44feabd1a5!2sGreen%20View%20Hotel!5e1!3m2!1sen!2sin!4v1792501269524!5m2!1sen!2sin" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="Map showing Hotel Green View in Leh"></iframe>
+      </div>
+    </div>
+    <div class="arrive">
+      <div class="rise"><b>From Leh airport</b><p>Send us your flight details and we'll pick you up.</p></div>
+      <div class="rise"><b>From the bus stand</b><p>Message us when you arrive and we'll guide you or send a car.</p></div>
+      <div class="rise"><b>Prefer a booking site?</b><p>You can also book us on <a href="https://www.agoda.com/it-it/green-view-residency/hotel/leh-in.html?cid=1844104&amp;ds=O8ABbZ7uRPhLrMLZ" target="_blank" rel="noopener">Agoda</a> or <a href="https://www.booking.com/Share-Jrj0kc8" target="_blank" rel="noopener">Booking.com</a>.</p></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <a class="brand" href="#home" aria-label="Hotel Green View, home">
+        <img src="assets/images/logo_images/logo-mark.png" alt="" width="48" height="42">
+        <span><b>Green View</b><small>Hotel · Leh</small></span>
+      </a>
+      <p>A family-run guest house in Upper Karzoo, Leh, with mountain views, home-cooked food and a host who helps you plan every day in Ladakh.</p>
+    </div>
+    <nav class="foot-col" aria-label="Footer">
+      <h4>Explore</h4>
+      <a href="#rooms">Rooms</a>
+      <a href="#food">From our kitchen</a>
+      <a href="#experiences">Experiences</a>
+      <a href="#explore">Explore Ladakh</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">Before you come</a>
+    </nav>
+    <div class="foot-col">
+      <h4>Contact</h4>
+      <a href="https://wa.me/917006121008" target="_blank" rel="noopener">WhatsApp +91 70061 21008</a>
+      <a href="tel:+917006121008">Call +91 70061 21008</a>
+      <a href="mailto:greenviewhotel08@gmail.com">greenviewhotel08@gmail.com</a>
+      <span>Upper Karzoo, Leh, Ladakh</span>
+      <span>Open April to October</span>
+    </div>
+    <div class="foot-col">
+      <h4>Book online</h4>
+      <a class="ota" href="https://www.agoda.com/it-it/green-view-residency/hotel/leh-in.html?cid=1844104&amp;ds=O8ABbZ7uRPhLrMLZ" target="_blank" rel="noopener">Agoda <span aria-hidden="true">↗</span></a>
+      <a class="ota" href="https://www.booking.com/Share-Jrj0kc8" target="_blank" rel="noopener">Booking.com <span aria-hidden="true">↗</span></a>
+      <a class="btn book" href="#rates">Ask today's rate</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>© <span id="year">2026</span> Hotel Green View, Leh. All rights reserved.</span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" aria-pressed="true" data-lang="en">English</button>
+      <button type="button" aria-pressed="false" data-lang="hi">हिंदी</button>
+    </div>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Quick booking">
+  <a class="btn book" href="#rates">Ask today's rate</a>
+  <a class="btn line" href="https://wa.me/917006121008" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
