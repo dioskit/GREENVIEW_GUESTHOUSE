@@ -8,7 +8,7 @@
   nav.querySelectorAll("a").forEach(function(a){a.addEventListener("click",function(){nav.classList.remove("open");menuBtn.setAttribute("aria-expanded","false")})});
 
   // --- hero slideshow: [file, focal point]
-  var slides=[["2.jpg","50% 50%"],["4.jpg","50% 60%"],["6.jpg","50% 82%"],["3.jpeg","50% 50%"],["7.jpeg","50% 40%"],["1.jpeg","50% 55%"],["5.jpg","50% 70%"]];
+  var slides=[["2.jpg","50% 50%"],["4-web.jpg","50% 60%"],["6.jpg","50% 82%"],["3.jpeg","50% 50%"],["7.jpeg","50% 40%"],["1-web.jpg","50% 55%"],["5-web.jpg","50% 70%"]];
   var box=document.getElementById("slides"),dots=document.getElementById("dots"),cur=0,timer;
   slides.forEach(function(sl,i){
     var d=document.createElement("div");d.className="slide"+(i?"":" on");
@@ -68,7 +68,7 @@
       facts:[["Altitude","About 4,500 m"],["From Leh","7 to 8 hours by road"],["Best time","June to September"],["Permit","Yes, we arrange it"]],
       days:[["Day 1: Leh to Tso Moriri","Start early and follow the Indus south-east through Upshi and Chumathang, where you can stop at the hot springs. Climb onto the plateau, passing nomad camps, and reach Korzok by late afternoon."],["Day 2: Korzok and the lakeshore","Visit Korzok monastery in the morning and walk along the shore. In the afternoon, take a short drive to Tso Kar, a smaller salt lake, or simply rest by the water."],["Day 3: Back to Leh","Drive back to Leh after breakfast, with time for a stop at Chumathang on the way."]],
       tip:"This is the highest and most remote trip here, so take it easy on the first evening and keep a light jacket close even in the car."},
-    {name:"Nubra Valley",tag:"Overnight",img:"landingPageSlide_images/6.jpg",pos:"50% 88%",
+    {name:"Nubra Valley",tag:"Overnight",img:"exploreLadakh_images/nubra.jpg",pos:"50% 88%",
       short:"Cross Khardung La to sand dunes, double-humped camels and the villages of Diskit and Hunder.",
       intro:"Nubra is a green valley north of Leh where the Shyok and Nubra rivers meet. It's famous for the white sand dunes at Hunder, where Bactrian camels walk against a backdrop of snowy peaks, and for Diskit monastery with its giant Maitreya Buddha looking down the valley.",
       facts:[["Altitude","About 3,050 m"],["From Leh","4 to 5 hours by road"],["Best time","May to October"],["Permit","Yes, we arrange it"]],
@@ -126,6 +126,20 @@
   document.getElementById("galleryGrid").innerHTML=gal.map(function(g){return '<figure class="ph '+g[1]+'"><img src="'+IMG+'gallery_images/'+g[0]+'" alt="'+g[2]+'" loading="lazy"></figure>'}).join("");
 
   var yr=document.getElementById("year");if(yr)yr.textContent=new Date().getFullYear();
+
+  // --- photo viewer for room and gallery photos
+  var lb=document.getElementById("lightbox"),lbImg=document.getElementById("lbImg"),lbCap=document.getElementById("lbCap"),group=[],at=0;
+  function show(i){at=(i+group.length)%group.length;var im=group[at];lbImg.src=im.currentSrc||im.src;lbImg.alt=im.alt;lbCap.textContent=im.alt}
+  document.addEventListener("click",function(e){
+    var im=e.target.closest(".gallery img, .room img");if(!im)return;
+    var scope=im.closest(".gallery, .room");group=[].slice.call(scope.querySelectorAll("img"));show(group.indexOf(im));
+    if(lb.showModal)lb.showModal();else lb.setAttribute("open","");
+  });
+  document.getElementById("lbClose").addEventListener("click",function(){lb.close()});
+  document.getElementById("lbPrev").addEventListener("click",function(){show(at-1)});
+  document.getElementById("lbNext").addEventListener("click",function(){show(at+1)});
+  lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
+  lb.addEventListener("keydown",function(e){if(e.key==="ArrowLeft")show(at-1);if(e.key==="ArrowRight")show(at+1)});
 
   // --- ask today's rate: builds a WhatsApp message
   var form=document.getElementById("enquiry"),send=document.getElementById("sendWa"),note=document.getElementById("formNote");

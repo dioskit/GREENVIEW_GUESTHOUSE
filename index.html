@@ -6,12 +6,21 @@
 <title>Hotel Green View, Leh</title>
 <meta name="description" content="Hotel Green View, a family-run guest house in Upper Karzoo, Leh, Ladakh. Deluxe and Premium rooms, mountain views, home-cooked Ladakhi food and host-led experiences. Ask us directly on WhatsApp.">
 <link rel="icon" href="assets/images/logo_images/logo-mark.png">
+<meta name="theme-color" content="#343E41">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hotel Green View, Leh">
+<meta property="og:description" content="A family-run guest house in Upper Karzoo, Leh, with mountain views, home-cooked Ladakhi food and host-led experiences.">
+<meta property="og:image" content="assets/images/gallery_images/1.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"Hotel Green View","description":"A family-run guest house in Upper Karzoo, Leh, Ladakh, with mountain views, home-cooked food and host-led experiences.","address":{"@type":"PostalAddress","streetAddress":"Upper Karzoo","addressLocality":"Leh","addressRegion":"Ladakh","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":34.17046,"longitude":77.57462},"telephone":"+91-7006121008","email":"greenviewhotel08@gmail.com","image":"assets/images/gallery_images/1.jpg","sameAs":["https://www.agoda.com/it-it/green-view-residency/hotel/leh-in.html","https://www.booking.com/Share-Jrj0kc8"]}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..600;1,400..600&family=Manrope:wght@400..700&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<a class="skip" href="#rooms">Skip to content</a>
 
 <header class="top">
   <div class="wrap">
@@ -59,8 +68,8 @@
     </div>
     <div class="rooms">
       <article class="room rise">
-        <figure class="ph"><img src="assets/images/rooms_images/2.jpg" alt="Deluxe room with a double bed and large windows" loading="lazy"></figure>
-        <div class="thumbs"><img src="assets/images/rooms_images/1.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/3.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/13.jpg" alt="" loading="lazy"></div>
+        <figure class="ph zoom"><img src="assets/images/rooms_images/2.jpg" alt="Deluxe room with a double bed and large windows" loading="lazy"></figure>
+        <div class="thumbs"><img src="assets/images/rooms_images/1.jpg" alt="Deluxe room with a patterned rug" loading="lazy"><img src="assets/images/rooms_images/3.jpg" alt="Deluxe room bed and wardrobe" loading="lazy"><img src="assets/images/rooms_images/13.jpg" alt="Bathroom" loading="lazy"></div>
         <div class="body">
           <h3>Deluxe Room</h3>
           <p>A bright, simple room for couples, friends or a small family, with a comfortable bed, wooden floors and space to unpack after a long road.</p>
@@ -68,8 +77,8 @@
         </div>
       </article>
       <article class="room rise">
-        <figure class="ph"><img src="assets/images/rooms_images/6.jpg" alt="Premium room with a sitting area and a view of the mountains" loading="lazy"></figure>
-        <div class="thumbs"><img src="assets/images/rooms_images/7.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/8.jpg" alt="" loading="lazy"><img src="assets/images/rooms_images/12.jpg" alt="" loading="lazy"></div>
+        <figure class="ph zoom"><img src="assets/images/rooms_images/6.jpg" alt="Premium room with a sitting area and a view of the mountains" loading="lazy"></figure>
+        <div class="thumbs"><img src="assets/images/rooms_images/7.jpg" alt="Premium room bed by the window" loading="lazy"><img src="assets/images/rooms_images/8.jpg" alt="Premium room with a TV" loading="lazy"><img src="assets/images/rooms_images/12.jpg" alt="Premium room with a view" loading="lazy"></div>
         <div class="body">
           <h3>Premium Room</h3>
           <p>Our larger room, for guests who want a little more space and the best of the view. A good choice for longer stays and remote work.</p>
@@ -282,6 +291,13 @@
   </div>
 </section>
 </main>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" type="button" id="lbClose" aria-label="Close">×</button>
+  <button class="lb-btn lb-prev" type="button" id="lbPrev" aria-label="Previous photo">‹</button>
+  <figure><img id="lbImg" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lb-btn lb-next" type="button" id="lbNext" aria-label="Next photo">›</button>
+</dialog>
 
 <footer class="site">
   <div class="wrap foot-grid">
