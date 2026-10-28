@@ -15,7 +15,6 @@
   function restart(){clearInterval(timer);if(!still)timer=setInterval(function(){go((cur+1)%box.children.length)},6000)}
   restart();
 
-  var checks=document.getElementById("f-exp");
 
   // --- explore Ladakh: each place opens a details dialog with an itinerary
   var places=[
@@ -92,8 +91,7 @@
     var $=function(id){return document.getElementById(id).value.trim()};
     var missing=[["f-in","arrival date"],["f-out","departure date"],["f-name","name"]].filter(function(r){return !$(r[0])}).map(function(r){return r[1]});
     if(missing.length){note.textContent="Please add your "+missing.join(", ")+".";send.classList.remove("ready");return}
-    var picked=[].slice.call(checks.querySelectorAll("input:checked")).map(function(c){return c.value});
-    var text="Julley! Could you send me today's rate at Hotel Green View?\nArrival: "+$("f-in")+"\nDeparture: "+$("f-out")+"\nGuests: "+$("f-guests")+"\nRoom: "+$("f-room")+(picked.length?"\nInterested in: "+picked.join(", "):"")+"\nName: "+$("f-name");
+    var text="Julley! Could you send me today's rate at Hotel Green View?\nArrival: "+$("f-in")+"\nDeparture: "+$("f-out")+"\nGuests: "+$("f-guests")+"\nRoom: "+$("f-room")+"\nName: "+$("f-name");
     send.href=WA+"?text="+encodeURIComponent(text);
     send.classList.add("ready");
     note.textContent="Your message is ready. Tap “Open WhatsApp to send” to check it and send it to us.";
@@ -106,12 +104,12 @@
   }
 
   // --- English / Hindi
-  var hi={nav_rooms:"कमरे",nav_exp:"अनुभव",nav_explore:"लद्दाख घूमें",nav_gallery:"गैलरी",nav_contact:"संपर्क",
+  var hi={nav_rooms:"कमरे",nav_exp:"आसपास",nav_explore:"लद्दाख घूमें",nav_gallery:"गैलरी",nav_contact:"संपर्क",
     hero_h:"जहाँ पहाड़ <em>घर जैसे लगते हैं</em>",hero_p:"पहाड़ों के नज़ारे, घर के बने खाने और ऐसे मेज़बान के साथ एक आरामदायक, पारिवारिक गेस्ट हाउस, जो लद्दाख में आपके हर दिन की योजना बनाने में मदद करता है।",
-    ask_rate:"आज का किराया पूछें",cta_rooms:"कमरे देखें",rooms_eb:"हमारे साथ ठहरें",rooms_h:"कमरे",rooms_p:"हर कमरे में तीन मेहमान तक ठहर सकते हैं और चौबीसों घंटे गर्म पानी मिलता है। किराया मौसम के अनुसार बदलता है, आज का किराया हमसे पूछें।",
+    ask_rate:"आज का किराया पूछें",cta_rooms:"कमरे देखें",rooms_eb:"हमारे साथ ठहरें",rooms_h:"कमरे",rooms_p:"तीन तरह के कमरे, हर एक में अटैच बाथरूम और चौबीसों घंटे गर्म पानी। किराया मौसम के साथ बदलता है, इसलिए आज का किराया हमसे पूछें।",
     rates_eb:"आज का किराया पूछें",rates_h:"अपनी तारीखें बताइए, हम सबसे अच्छा किराया भेजेंगे",
     fac_eb:"सुविधाएँ",fac_h:"ऊँचाई पर दिन भर घूमने के बाद ज़रूरत की हर चीज़",food_eb:"हमारी रसोई से",food_h:"घर का बना खाना, जैसा हम खाते हैं",
-    exp_eb:"हमारे साथ अनुभव",exp_h:"लेह को वैसे देखें जैसे हम जानते हैं",exp_p:"ठहरने के साथ हमारा परिवार लेह के आसपास कुछ छोटी सैर कराता है। पहले से बुक करने की ज़रूरत नहीं, जब मन हो हमें बता दीजिए।",
+    near_eb:"आसपास के दर्शनीय स्थल",near_h:"लेह को खुद घूमें",near_p:"ये जगहें ग्रीन व्यू से पैदल या थोड़ी टैक्सी की दूरी पर हैं। जाने का सबसे अच्छा समय और रास्ता हमसे पूछें।",
     story_eb:"हमारी कहानी",explore_eb:"लद्दाख घूमें",explore_h:"लेह से शुरू करें, फिर आगे बढ़ें",gal_eb:"गैलरी",gal_h:"एक नज़र",rev_eb:"मेहमानों की राय",rev_h:"मेहमान क्या कहते हैं",faq_eb:"आने से पहले",faq_h:"यात्रियों के सवाल",con_eb:"संपर्क और बुकिंग",con_h:"हमें सीधे मैसेज करें"};
   var en={};document.querySelectorAll("[data-i18n]").forEach(function(el){if(!(el.dataset.i18n in en))en[el.dataset.i18n]=el.innerHTML});
   function setLang(l){
