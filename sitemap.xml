@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://dioskit.github.io/GREENVIEW_GUESTHOUSE/</loc>
+    <loc>https://www.greenviewleh.com/</loc>
     <lastmod>2026-10-28</lastmod>
-    <image:image><image:loc>https://dioskit.github.io/GREENVIEW_GUESTHOUSE/assets/images/gallery_images/1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://dioskit.github.io/GREENVIEW_GUESTHOUSE/assets/images/rooms_images/deluxe-1.jpg</image:loc></image:image>
-    <image:image><image:loc>https://dioskit.github.io/GREENVIEW_GUESTHOUSE/assets/images/rooms_images/superior-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.greenviewleh.com/assets/images/gallery_images/1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.greenviewleh.com/assets/images/rooms_images/deluxe-1.jpg</image:loc></image:image>
+    <image:image><image:loc>https://www.greenviewleh.com/assets/images/rooms_images/superior-1.jpg</image:loc></image:image>
   </url>
 </urlset>
