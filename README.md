@@ -16,4 +16,4 @@ Replace a photo with one of the same name and it shows up in the same place. Kee
 
 ## Web address
 
-The site is set up for `https://dioskit.github.io/GREENVIEW_GUESTHOUSE/`. If you move it to your own domain, replace that address in `index.html`, `robots.txt`, `sitemap.xml` and `404.html`.
+The site lives at `https://www.greenviewleh.com/`, served by GitHub Pages. The `CNAME` file tells GitHub Pages to use that domain. At the domain registrar, the DNS needs four `A` records for `@` pointing to 185.199.108.153, 185.199.109.153, 185.199.110.153 and 185.199.111.153, and a `CNAME` record for `www` pointing to `dioskit.github.io`.

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dioskit.github.io/GREENVIEW_GUESTHOUSE/sitemap.xml
+Sitemap: https://www.greenviewleh.com/sitemap.xml
